@@ -20,4 +20,6 @@ int main()
     len--;
     for(int i=0;i<len;i++)
         printf("%s\n", ans[i]);
+    
+    return 0;
 }

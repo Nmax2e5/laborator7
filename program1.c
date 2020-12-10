@@ -15,21 +15,17 @@ int main()
         if(ans==NULL)
         {
             ans=(char*) malloc(strlen(c)*sizeof(char));
+            strcpy(ans,c);
         }
         else
         {
-            ans=(char*) realloc(ans, (len+(int)strlen(c))*sizeof(char));
-        }
-
-        int pos=0;
-        while(c[pos]!='\0')
-        {
-            ans[len++]=c[pos++];
+            ans=(char*) realloc(ans, (len+strlen(c))*sizeof(char));
+             strcat(ans, c);
         }
     }
 
-    ans[len]='\0';
+    //ans[len]='\0';
     printf("%s", ans);
-    
+
     return 0;
 }

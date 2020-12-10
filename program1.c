@@ -30,4 +30,6 @@ int main()
 
     ans[len]='\0';
     printf("%s", ans);
+    
+    return 0;
 }

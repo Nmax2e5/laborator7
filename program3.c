@@ -59,4 +59,6 @@ int main()
     }
 
     afisare();
+    
+    return 0
 }
